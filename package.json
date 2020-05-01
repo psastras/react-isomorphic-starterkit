@@ -28,7 +28,9 @@
     "watch-server": "webpack --watch --verbose --colors --display-error-details --config configs/webpack.server-watch.js",
     "watch-server-start": "node node_modules/just-wait --pattern \"dist/*.js\" && npm run start",
     "watch-client": "webpack-dev-server --config configs/webpack.client-watch.js",
-    "watch": "concurrently --kill-others \"npm run watch-server-start\" \"npm run watch-server\" \"npm run watch-client\""
+    "watch": "concurrently --kill-others \"npm run watch-server-start\" \"npm run watch-server\" \"npm run watch-client\"",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "babel-polyfill": "6.6.1",
@@ -49,7 +51,8 @@
     "react-router": "2.0.0",
     "react-transmit": "3.1.7",
     "sass-loader": "3.1.2",
-    "style-loader": "0.13.0"
+    "style-loader": "0.13.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel": "6.5.2",
@@ -69,5 +72,6 @@
   },
   "engines": {
     "node": ">=0.10.32"
-  }
+  },
+  "snyk": true
 }
