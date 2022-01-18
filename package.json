@@ -37,7 +37,7 @@
     "fetch-plus-bearerauth": "3.5.0",
     "fetch-plus-json": "3.6.0",
     "file-loader": "0.8.5",
-    "isomorphic-fetch": "2.2.1",
+    "isomorphic-fetch": "3.0.0",
     "isomorphic-style-loader": "0.0.10",
     "koa": "1.2.0",
     "koa-proxy": "0.5.0",
